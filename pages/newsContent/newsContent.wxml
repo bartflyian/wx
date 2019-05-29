@@ -1,0 +1,9 @@
+<!-- index.wxml -->
+<view class="page">
+    <view class="news-title">{{title}}</view>
+    <view class="news-from" hover-class="none" hover-stop-propagation="false">{{from}}</view>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        <image class="" src="{{newImage}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <text class="news-content" selectable="false" space="false" decode="false">{{content}}</text>
+</view>

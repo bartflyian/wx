@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tabBar/video/video",
+    "pages/tabBar/playerRank/playerRank",
+    "pages/tabBar/teamRank/teamRank"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#839fce",
+    "navigationBarTitleText": "足球资讯",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#5d8cdb",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新闻",
+        "iconPath": "imgs/icon/news.png",
+        "selectedIconPath": "imgs/icon/news-light.png"
+      },
+      {
+        "pagePath": "pages/tabBar/video/video",
+        "text": "视频",
+        "iconPath": "imgs/icon/video.png",
+        "selectedIconPath": "imgs/icon/video-light.png"
+      },
+      {
+        "pagePath": "pages/tabBar/playerRank/playerRank",
+        "text": "球员榜",
+        "iconPath": "imgs/icon/player.png",
+        "selectedIconPath": "imgs/icon/player-light.png"
+      },
+      {
+        "pagePath": "pages/tabBar/teamRank/teamRank",
+        "text": "球队排名",
+        "iconPath": "imgs/icon/team.png",
+        "selectedIconPath": "imgs/icon/team-light.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

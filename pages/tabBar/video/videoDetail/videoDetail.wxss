@@ -1,0 +1,16 @@
+page{
+    height: 100%;
+    }
+.page{
+    background: #101c21;
+    height: 100%;
+}
+.page video{
+    width: 100%;
+}
+.page .title{
+    color: #fff;
+    font-size: 15px;
+    width:90%;
+    margin-left:5%; 
+}

@@ -1,0 +1,46 @@
+<!-- index.wxml -->
+<view class="page">
+    <view class="section__ctn">
+        <image class="index-bgImg" mode="scaleToFill" src="{{index_bgImg}}"></image>
+    </view>
+    <!-- 左右切换比赛比分 -->
+    <view class="game_score_top">
+        <view class="left-Select" bindtap="slideScore" data-side='0'>
+            <image src="{{leftS}}"></image>
+        </view>
+        <view class="selectDate">{{game_score.month}}月{{game_score.day}}日</view>
+        <view class="right-Select" bindtap="slideScore" data-side='1'>
+            <image src="{{rightS}}"></image>
+        </view>
+    </view>
+    <!-- 比分显示 -->
+    <view class="game_score_bottom">
+        <view class="teamLogo">
+            <image src="{{game_score.leftImg}}"></image>
+            <text class="teamName">{{game_score.leftTeam}}</text>
+        </view>
+        <view class="score">
+            <text class="{{win == 1 ? 'scoreline' : ''}}">{{game_score.leftScore}}</text>
+            <text class="scoreline scoreline2">-</text>
+            <text class="{{win == 2 ? 'scoreline' : ''}}">{{game_score.rightScore}}</text>
+        </view>
+        <view class="teamLogo">
+            <image src="{{game_score.rightImg}}"></image>
+            <text class="teamName">{{game_score.rightTeam}}</text>
+        </view>
+    </view>
+    <view class="slipt"></view>
+    <!-- 热门新闻 -->
+    <view class="news">
+        <text class="news-top" selectable="false" space="false" decode="false">热门新闻</text>
+        <view class="news-List">
+            <view class="news-Single" wx:for="{{newList}}" wx:key="{{i}}" bindtap='gotoDetail' data-id='{{item.id}}'>
+                <view class="news-title">{{item.title}}</view>
+                <view class="news-image">
+                    <image src="{{item.newImage}}" lazy-load="false" binderror="" bindload=""></image>
+                </view>
+                <view class="news-from">{{item.from}}</view>
+            </view>
+        </view>
+    </view>
+</view>

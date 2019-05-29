@@ -1,0 +1,42 @@
+.page{
+    background-color: #101c21;
+    height: 100%;
+}
+.page .videoBox{
+    margin: 0 15px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding-top: 20px;
+}
+.page .videoSingle{ 
+    width:50%; 
+    height:180px;
+    overflow: hidden;
+    position: relative;
+}
+.page .videoSingle image{
+    width: 90%;
+    height: 110px;
+    margin: 0 5%;
+}
+.page .videoSingle .video-title{
+    color: #fff;
+    font-size: 13px;
+    position: absolute;
+    top:100px;
+    text-align:center;
+    width:100%;
+
+}
+.page .videoSingle .v-player image{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform:translate( -50%, -60px);
+
+}
+

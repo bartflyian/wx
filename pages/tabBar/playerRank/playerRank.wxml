@@ -1,0 +1,30 @@
+<view class="page">
+    <scroll-view style="height:{{scrollHeight}}px;" class="list" bindscrolltolower="loadMore" scroll-y="true">
+        <view class="player-table" hover-class="none" hover-stop-propagation="false">
+            <!-- bindscrolltoupper="refresh" -->
+            <view class="thead" hover-class="none" hover-stop-propagation="false">
+                <view>球员</view>
+                <view>国籍</view>
+                <view>俱乐部</view>
+                <view>身价</view>
+            </view>
+            <view class="tbody" hover-class="none" hover-stop-propagation="false">
+                <block wx:for="{{playList}}" wx:key="index">
+                    <view>
+                        <image class="player" src="{{item.playerPic}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class="td">{{item.from}}</view>
+                    <view class="td">{{item.club}}</view>
+                    <view class="td">{{item.cost}}</view>
+                </block>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="loading" hover-class="none" hover-stop-propagation="false" hidden="{{hidden}}">
+        <view class="loading-content" hover-class="none" hover-stop-propagation="false">
+            <image hidden="{{nomore}}" class="" src="../../../imgs/icon/loading.gif" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            <text class="loading-word">{{loadWord}}</text>
+        </view>
+    </view>
+</view>

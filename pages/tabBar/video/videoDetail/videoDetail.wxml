@@ -1,0 +1,6 @@
+<view class="page">
+    <view class="videobox" hover-class="none" hover-stop-propagation="false">
+        <video id="myVideo" src="{{videourl}}" enable-danmu danmu-btn controls></video>
+    </view>
+    <text class="title" selectable="false" space="false" decode="false">{{title}}</text>
+</view>

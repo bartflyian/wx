@@ -1,0 +1,62 @@
+page{
+    height: 100%;
+}
+.page{
+    color: #fff;
+    font-size: 15px; 
+}
+.page .player-table{
+    margin:0px 20px;
+    padding-top: 40px;
+}
+.page .player-table .thead,.page .player-table .tbody{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.page .player-table .thead{
+    height: 40px;
+    color: green;
+}
+.page .player-table .thead view,.page .player-table .tbody view{
+    flex: 1 1 auto;
+    text-align: center; 
+    display: block;
+    overflow: hidden;
+    width: 25%;
+    border-bottom: 1px solid #696d6f; 
+    padding: 10px 0;
+}
+.page .td{
+    vertical-align: middle;
+    line-height: 80px;
+}
+.page .player-table .tbody image{
+    height:50px;
+    width:50px; 
+    border-radius: 50%;
+}
+.page .player-table .tbody text{
+    display: inline-block;
+    width: 100%;
+    height: 15px;
+}
+.page .loading{ 
+    background-color:#fff;
+    height:36px;
+    color:gray;
+    line-height:33px; 
+}
+.page .loading .loading-content{
+    margin-left: 50%;
+    transform: translate(-30%,0);
+}
+.page .loading image{
+    width: 40px;
+    height: 40px; 
+}
+.page .loading .loading-word{
+    position:absolute;
+    top:3px; 
+}

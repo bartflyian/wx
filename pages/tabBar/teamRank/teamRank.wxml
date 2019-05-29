@@ -1,0 +1,22 @@
+<view class="page">
+    <view class="section_nav">
+        <scroll-view class="scroll-view_H" scroll-x style="width:100%;height:30px;">
+            <view wx:for="{{tabList}}" wx:key="{{index}}" bindtap="switchTab" data-current="{{index}}" class="scroll-view-item {{currentTab==index ? 'on' : ''}}">
+                {{item}}
+            </view>
+        </scroll-view>
+    </view>
+    <swiper class="tab-swiper" current="{{currentTab}}" bindchange="switchSwiper">
+        <swiper-item wx:for="{{tabList}}" wx:key="{{index}}">
+            <view class='section_positions' wx:if="{{dataSource.length > 0}}" height="{{auto}}">
+                <view class='position_list' wx:for="{{dataSource}}" wx:for-item='itemPosition' wx:key="{{id}}" id="{{itemPosition.id}}" catchtap="onTap">
+                    <text class='rank'>{{itemPosition.Rank}}</text>
+                    <image src="{{itemPosition.teamLogo}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    <text class='teamName'>{{itemPosition.teamName}}</text>
+                    <text class='from'>{{itemPosition.from}}</text>
+                    <text class='points'>{{itemPosition.points}}</text>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

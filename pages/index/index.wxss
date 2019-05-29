@@ -1,0 +1,132 @@
+.page{
+    background-color: #101c21;
+    height: 100%;
+}
+.page .index-bgImg{
+    width: 100%;
+    height: 300rpx;
+}
+
+.page .game_score_top{
+    text-align: center;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    line-height: 35px;
+}
+
+.page .game_score_top image{
+    width: 35px;
+    height: 35px;
+}
+
+.page .game_score_top .selectDate{
+    width: 60%;
+    height: 40px;
+    float: left;
+}
+
+.page .game_score_top .left-Select,.page .game_score_top .right-Select{
+    width: 20%;
+    float: left;
+}
+.page .game_score_top .left-Select{
+    text-align: right;
+}
+
+.page .game_score_top .right-Select{
+    text-align: left; 
+}
+
+.game_score_bottom{
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    height: 120px;
+    margin-top: 15px;
+    color: #fff;
+}
+.game_score_bottom .teamLogo{
+    width: 30%;
+    float: left;
+}
+.game_score_bottom .teamLogo image{
+    width: 70px;
+    height: 70px; 
+}
+.game_score_bottom .teamLogo .teamName{
+    font-size: 15px;  
+    display: inline-block;
+    width: 100%;
+}
+.game_score_bottom .score{
+    width: 40%;
+    float: left; 
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 18px;
+}
+.game_score_bottom .scoreline{
+    color: gray;
+}
+.game_score_bottom  .scoreline2{
+    margin: 0 10px;
+}
+
+.slipt{
+    height: 20px;
+    background-color: #000; 
+}
+
+.news{
+    
+}
+.news .news-top{
+    color: #596060;
+    display: block;
+    font-size: 18px;
+    margin: 5px 0 0 20px;
+}
+
+.news .news-List{
+    margin: 0 20px;
+    color: #fff;
+    overflow: hidden;
+}
+.news .news-List .news-Single{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid #696d6f;
+}
+.news .news-List .news-Single .news-title{
+    margin-left: 1%;
+    width: 59%;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 14px;
+    height: 80px; 
+    margin-top: 20px;
+}
+.news .news-List .news-Single .news-image{ 
+    /* float: left;
+    padding-bottom: 40%; 
+    width: 40%;
+    height: 0; */
+    margin-top: 10px;
+}
+.news .news-List .news-Single .news-image image{ 
+    width: 37%;
+    height: 80px;
+    margin-left: 3%;
+} 
+.news .news-List .news-Single .news-from{
+    color: #596060;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    font-size: 13px;
+}

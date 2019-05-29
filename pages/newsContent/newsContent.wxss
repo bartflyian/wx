@@ -1,0 +1,22 @@
+.page{
+    background-color: #fff;
+    height: 100%;
+    margin: 20px 25px 50px 25px;
+}
+
+.page .news-title{
+    font-size: 20px;
+    color: #60605d;
+}
+.page .news-from{
+    font-size: 14px;
+    margin: 5px 0 15px 0;
+    color: #c9c3c3;
+}
+.page .news-content{
+    font-size: 15px;
+    color: #606060;
+    line-height: 18px;
+    
+}
+ 
